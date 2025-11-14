@@ -1,0 +1,119 @@
+/* ./styles/standard.css */
+
+.headerBg {
+    box-shadow: 0 1px 10px 10px #000000;
+    /* background: #082028; */
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    header {
+        color: white;
+        font-size: 4rem;
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+            width: 40rem;
+        }
+
+        @media (max-width: 1150px) {
+            font-size: 3rem;
+
+            img {
+                width: 30rem;
+            }
+        }
+
+        @media (max-width:767px) {
+            font-size: 2.5rem;
+
+            img {
+                width: 20rem;
+            }
+        }
+
+        @media (max-width:550px) {
+            font-size: 1.7rem;
+
+            img {
+                width: 15rem;
+            }
+        }
+    }
+}
+
+main {
+
+    /*  #idSecCardDlg => ./styles/cardDlg.css  */
+
+    #idSecBooksTable {
+
+        table {
+            padding-top: 10rem;
+            width: 100rem;
+
+            tr {
+                background: whitesmoke;
+            }
+
+            @media (max-width: 1150px) {
+                padding-top: 7rem;
+                width: 80rem;
+            }
+
+            @media (max-width: 900px) {
+                padding-top: 5rem;
+                width: 60rem;
+            }
+
+            @media (max-width: 700px) {
+                display: none;
+            }
+
+            thead {
+                th {
+                    border: 0;
+                    background: #F6AD14;
+                    font-size: 1.5em;
+
+                    &#idC0xR0 {
+                        border-radius: 1rem 0 0 0;
+                    }
+
+                    &#idC5xR0 {
+                        border-radius: 0 1rem 0 0;
+                    }
+                }
+            }
+
+            tbody {
+                td {
+                    border: 0;
+                    padding: 1rem;
+
+                    &.cColumn4and5 {
+                        text-align: center;
+                    }
+
+                    button {
+                        border: 0;
+
+                        img {
+                            width: 6rem;
+
+                            &:hover {
+                                background: #e39f0282;
+                                box-shadow: 0 0 7px 7px #e39f0282;
+                                /* filter: drop-shadow(0px 0px 7px #6cabc67b); */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

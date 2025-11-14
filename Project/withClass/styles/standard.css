@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #05171E;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    max-width: 1440px;
+    width: 100%;
+
+    @media (max-width:1150px) {
+        padding: 5rem;
+    }
+
+    @media (max-width:767px) {
+        padding: 2rem;
+    }
+
+    @media (max-width:550px) {
+        padding: 1rem;
+    }
+}

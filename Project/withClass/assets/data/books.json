@@ -1,0 +1,179 @@
+{
+  "books": [
+    {
+      "id": "die-geheimnisse-des-ozeans",
+      "title": "Die Geheimnisse des Ozeans",
+      "authors": [
+        "Clara Meer"
+      ],
+      "genres": [
+        "Fantasy"
+      ],
+      "priceCents": 1999,
+      "currency": "EUR",
+      "likes": 1250,
+      "liked": true,
+      "publishedAt": "2018-01-01",
+      "summary": "Ein fantastisches Abenteuer in einer mythischen Unterwasserwelt.",
+      "coverUrl": "/assets/covers/die-geheimnisse-des-ozeans.jpg",
+      "rating": {
+        "average": 4.4,
+        "count": 5
+      },
+      "comments": [
+        {
+          "id": "cmt-leser123",
+          "name": "Leser123",
+          "text": "Ein faszinierendes Abenteuerbuch, das mich von der ersten Seite an gefesselt hat.",
+          "rating": 5,
+          "createdAt": "2023-05-12T10:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "die-farben-des-himmels",
+      "title": "Die Farben des Himmels",
+      "authors": [
+        "Laura Blau"
+      ],
+      "genres": [
+        "Romance"
+      ],
+      "priceCents": 2295,
+      "currency": "EUR",
+      "likes": 1520,
+      "liked": true,
+      "publishedAt": "2019-01-01",
+      "summary": "Eine berührende Geschichte über Liebe, Verlust und Hoffnung.",
+      "coverUrl": "/assets/covers/die-farben-des-himmels.jpg",
+      "rating": {
+        "average": 4.6,
+        "count": 5
+      },
+      "comments": [
+        {
+          "id": "cmt-leserpeter",
+          "name": "LeserPeter",
+          "text": "Die Handlung war fesselnd und die Charaktere unglaublich lebendig.",
+          "rating": 5,
+          "createdAt": "2023-04-08T09:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "nebelfelder",
+      "title": "Nebelfelder",
+      "authors": [
+        "R. Falk"
+      ],
+      "genres": [
+        "Science-Fiction"
+      ],
+      "priceCents": 1899,
+      "currency": "EUR",
+      "likes": 980,
+      "liked": false,
+      "publishedAt": "2020-06-15",
+      "summary": "Kolonisten entdecken Anomalien auf einem fernen Mond.",
+      "coverUrl": "/assets/covers/nebelfelder.jpg",
+      "rating": {
+        "average": 4.0,
+        "count": 12
+      },
+      "comments": []
+    },
+    {
+      "id": "schatten-ueber-areth",
+      "title": "Schatten über Areth",
+      "authors": [
+        "Mira Lorn",
+        "T. Kehl"
+      ],
+      "genres": [
+        "Fantasy",
+        "Adventure"
+      ],
+      "priceCents": 2590,
+      "currency": "EUR",
+      "likes": 2210,
+      "liked": true,
+      "publishedAt": "2017-11-02",
+      "summary": "Zwei Magier auf der Suche nach einem vergessenen Siegel.",
+      "coverUrl": "/assets/covers/schatten-ueber-areth.jpg",
+      "rating": {
+        "average": 4.7,
+        "count": 31
+      },
+      "comments": [
+        {
+          "id": "cmt-ari",
+          "name": "Ari",
+          "text": "Fantastische Welt und tolles Pacing.",
+          "rating": 5,
+          "createdAt": "2022-09-01T08:12:00.000Z"
+        },
+        {
+          "id": "cmt-nora",
+          "name": "Nora",
+          "text": "Ein paar Kapitel hätten kürzer sein dürfen, sonst top.",
+          "rating": 4,
+          "createdAt": "2022-10-10T14:45:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "algorithmus-der-herzen",
+      "title": "Algorithmus der Herzen",
+      "authors": [
+        "Jonas Kern"
+      ],
+      "genres": [
+        "Romance",
+        "Contemporary"
+      ],
+      "priceCents": 1699,
+      "currency": "EUR",
+      "likes": 770,
+      "liked": false,
+      "publishedAt": "2021-03-10",
+      "summary": "Zwei Entwickler verlieben sich, während sie ein Matching-System bauen.",
+      "coverUrl": "/assets/covers/algorithmus-der-herzen.jpg",
+      "rating": {
+        "average": 4.1,
+        "count": 9
+      },
+      "comments": [
+        {
+          "id": "cmt-sam",
+          "name": "Sam",
+          "text": "Süße Story, hat Spaß gemacht.",
+          "rating": 4,
+          "createdAt": "2023-02-14T19:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fragmente-der-dawn",
+      "title": "Fragmente der Dawn",
+      "authors": [
+        "E. Nyx"
+      ],
+      "genres": [
+        "Science-Fiction",
+        "Thriller"
+      ],
+      "priceCents": 2140,
+      "currency": "EUR",
+      "likes": 1337,
+      "liked": true,
+      "publishedAt": "2016-09-20",
+      "summary": "Ein Ermittler jagt einen KI-Kult durch die Megastadt.",
+      "coverUrl": "/assets/covers/fragmente-der-dawn.jpg",
+      "rating": {
+        "average": 4.3,
+        "count": 18
+      },
+      "comments": []
+    }
+  ]
+}

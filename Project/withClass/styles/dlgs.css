@@ -1,0 +1,515 @@
+#idSecDlgs {
+
+    /* Aktiviert mit cMulti */
+    &.cSecDlgsMulti {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding-top: 3rem;
+
+        @media (max-width: 699px) {
+            gap: 2rem;
+        }
+
+        @media (max-width: 550px) {
+            gap: 1.5rem;
+        }
+    }
+
+    dialog {
+        border: 0;
+        border-radius: 4rem;
+        background: #0D323F;
+        width: 60rem;
+        /* height: 105rem; */
+        color: white;
+
+        /* &.cSingle {
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+            
+            &.opened {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                
+                &::backdrop {
+                    background: #333c3ff2;
+                    }
+                    
+                    @media (max-width: 700px) {
+                        display: none;
+                        }
+                        } */
+
+        &.cSingle {
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            &::backdrop {
+                background: #333c3ff2;
+            }
+
+            @media (max-width: 700px) {
+                display: none;
+            }
+        }
+
+        &.cMulti {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+        }
+
+        @media (min-width: 700px) {
+            display: none;
+        }
+
+        @media (max-width: 699px) {
+            border-radius: 2rem;
+            width: 40rem;
+        }
+
+        @media (max-width: 550px) {
+            border-radius: 1rem;
+            width: 27rem;
+        }
+
+        .cDlgHeader {
+            display: flex;
+            align-items: center;
+            padding: 3rem;
+            border-bottom: 3px solid #6cabc67b;
+
+            strong {
+                width: 100%;
+                font-size: 1.5em;
+                text-align: center;
+            }
+
+            button {
+                border: 0;
+                border-radius: 2rem;
+                background: #0D323F;
+
+                img {
+                    width: 3.5rem;
+                    /* filter: invert(0.3); */
+                }
+
+                &:hover {
+                    background: #6cabc67b;
+                    box-shadow: 0 0 7px 7px #6cabc67b;
+                    /* filter: drop-shadow(0px 0px 7px #6cabc67b); */
+                }
+            }
+
+            @media (max-width: 699px) {
+                padding: 1.5rem;
+
+                strong {
+                    font-size: 1em;
+                }
+
+                button {
+
+                    img {
+                        width: 2rem;
+                    }
+                }
+            }
+
+            @media (max-width: 550px) {
+                padding: 1rem;
+
+                strong {
+                    font-size: 1em;
+                }
+
+                button {
+
+                    img {
+                        width: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .cDlgBookImg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #6cabc67b;
+
+            img {
+                /* border: 1px solid red; */
+                height: 20rem;
+            }
+
+            @media (max-width: 699px) {
+                padding-bottom: 0.5rem;
+
+                img {
+                    height: 15rem;
+                }
+            }
+
+            @media (max-width: 550px) {
+                padding-bottom: 0.5rem;
+
+                img {
+                    height: 7rem;
+                }
+            }
+        }
+
+        .cDlgBookInfos {
+            padding: 3rem;
+            border-bottom: 3px solid #6cabc67b;
+
+            .cDlgBookInfosUp {
+                display: flex;
+                justify-content: space-between;
+
+                strong {
+                    font-size: 3em;
+                    color: #ff0000aa;
+                }
+
+                .cDlgRatingsEmojis {
+                    display: flex;
+                    gap: 3rem;
+
+                    figure {
+                        text-align: center;
+
+                        img {
+                            width: 7rem;
+                            border-radius: 3rem 3rem 5rem 5rem;
+
+                            &:hover {
+                                background: #d7584a58;
+                                box-shadow: 0 0 7px 7px #d7584a47;
+                                /* filter: drop-shadow(0px 0px 7px #D7594A); */
+                            }
+
+                            &.highlighted {
+                                background: #d7584a97;
+                                box-shadow: 0 0 7px 7px #d7584a97;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cDlgBookInfosDown {
+                table {
+                    /* wichtig, border-collapse; sonst kein border-spacing */
+                    border-collapse: separate;
+                    /* col-gap  row-gap */
+                    border-spacing: 0 1rem;
+
+                    th {
+                        text-align: start;
+                        padding-right: 1rem;
+                    }
+
+                    td {
+                        color: #f5f5f5ae;
+                    }
+                }
+            }
+
+            @media (max-width: 699px) {
+                font-size: 0.9em;
+                padding: 1.5rem;
+
+                .cDlgBookInfosUp {
+
+                    strong {
+                        font-size: 2em;
+                    }
+
+                    .cDlgRatingsEmojis {
+                        gap: 1.5rem;
+
+                        figure {
+
+                            img {
+                                width: 3em;
+                            }
+                        }
+                    }
+                }
+
+                .cDlgBookInfosDown {
+                    table {
+
+                        th {
+                            padding-right: 1rem;
+                        }
+
+                        td {}
+                    }
+                }
+            }
+
+            @media (max-width: 550px) {
+                padding: 1rem;
+                font-size: 0.7em;
+
+                .cDlgBookInfosUp {
+
+                    strong {
+                        font-size: 2em;
+                    }
+
+                    .cDlgRatingsEmojis {
+                        gap: 1.5rem;
+
+                        figure {
+
+                            img {
+                                width: 2.5em;
+                            }
+                        }
+                    }
+                }
+
+                .cDlgBookInfosDown {
+                    table {
+
+                        th {
+                            padding-right: 1rem;
+                        }
+
+                        td {}
+                    }
+                }
+            }
+        }
+
+        .cDlgCommentsArea {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 0 3rem;
+
+            strong {
+                font-size: 1.5em;
+            }
+
+            .cWrapperDiv {
+                height: 22rem;
+
+                /* Vertikales Scrollen aktivieren */
+                /* overflow-y: auto; */
+                overflow-y: scroll;
+                /* Kein Horizontales Scrollen */
+                overflow-x: hidden;
+
+                table {
+                    padding-left: 1rem;
+                    /* wichtig, border-collapse; sonst kein border-spacing */
+                    border-collapse: separate;
+                    /* col-gap  row-gap */
+                    border-spacing: 0 1rem;
+
+                    th {
+                        text-align: left;
+                        vertical-align: top;
+                    }
+
+                    td {
+                        color: #f5f5f5ae;
+                        font-size: 1em;
+                        padding: 0 1rem;
+                    }
+                }
+            }
+
+            @media (max-width: 699px) {
+                gap: 1rem;
+                padding: 0 3rem;
+
+                strong {
+                    font-size: 1.2em;
+                }
+
+                .cWrapperDiv {
+                    height: 10rem;
+
+                    table {
+                        font-size: 1em;
+
+                        td {
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 550px) {
+                gap: 1rem;
+                padding: 0 1rem;
+
+                strong {
+                    font-size: 1em;
+                }
+
+                .cWrapperDiv {
+                    height: 7rem;
+
+                    table {
+                        font-size: 0.8em;
+
+                        td {
+                            font-size: 0.7em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cDlgSendCommentForm {
+            justify-self: flex-end;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 3rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.1rem;
+                width: 100%;
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+
+                    input {
+                        border: 0;
+                        height: 2em;
+                        padding: 1.5rem 1rem;
+                        background: #114657;
+                    }
+
+                    .cDlgInputName {
+                        width: 100%;
+                        border-radius: 1rem 0 0 0;
+
+                    }
+
+                    .cDlgInputRating {
+                        width: 20rem;
+                        border-radius: 0 1rem 0 0;
+                    }
+
+                }
+
+                textarea {
+                    border: 0;
+                    border-bottom: 4px solid #6cabc682;
+                    height: 5em;
+                    border-radius: 0rem 0rem 1rem 1rem;
+                    padding: 1.5rem 1rem;
+                    background: #114657;
+                }
+            }
+
+            button {
+                border: 0;
+                background: #0D323F;
+
+                img {
+                    border-radius: 3rem 1rem 5rem 5rem;
+                    width: 5rem;
+                    padding: 0.1rem;
+
+                    &:hover {
+                        background: #6cabc67b;
+                        box-shadow: 0 0 7px 7px #6cabc67b;
+                        /* filter: drop-shadow(0px 0px 7px #D7594A); */
+                    }
+                }
+            }
+
+            @media (max-width: 699px) {
+                gap: 1rem;
+                padding: 1.5rem;
+
+                div {
+                    div {
+                        input {
+                            height: 1.5em;
+                            padding: 1rem 1rem;
+                        }
+
+                        .cDlgInputName {
+                            border-radius: 0.5rem 0 0 0;
+                        }
+
+                        .cDlgInputRating {
+                            width: 20rem;
+                            border-radius: 0 0.5rem 0 0;
+                        }
+                    }
+
+                    textarea {
+                        height: 4em;
+                    }
+                }
+
+                button {
+                    img {
+                        width: 3rem;
+                    }
+                }
+            }
+
+            @media (max-width: 550px) {
+                gap: 0.5rem;
+                padding: 0.7rem;
+
+                div {
+                    div {
+                        input {
+                            height: 1em;
+                            /* padding: 1rem 1rem; */
+                        }
+
+                        .cDlgInputName {
+                            border-radius: 0.5rem 0 0 0;
+                        }
+
+                        .cDlgInputRating {
+                            width: 10rem;
+                            border-radius: 0 0.5rem 0 0;
+                        }
+                    }
+
+                    textarea {
+                        height: 3em;
+                    }
+                }
+
+                button {
+                    img {
+                        width: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
